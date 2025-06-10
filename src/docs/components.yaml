@@ -1,0 +1,95 @@
+openapi: 3.0.0
+info:
+  title: Componentes Comunes
+  version: 1.0.0
+
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  parameters:
+    UserIdParam:
+      name: uid
+      in: path
+      required: true
+      schema:
+        type: string
+      description: ID del usuario
+
+    PetIdParam:
+      name: pid
+      in: path
+      required: true
+      schema:
+        type: string
+      description: ID de la mascota
+
+  schemas:
+    User:
+      type: object
+      properties:
+        _id:
+          type: string
+        name:
+          type: string
+        email:
+          type: string
+        role:
+          type: string
+
+    UserResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          example: success
+        payload:
+          $ref: '#/components/schemas/User'
+
+    UpdateUser:
+      type: object
+      properties:
+        name:
+          type: string
+        email:
+          type: string
+        role:
+          type: string
+
+    Pet:
+      type: object
+      properties:
+        _id:
+          type: string
+        name:
+          type: string
+        specie:
+          type: string
+        birthDate:
+          type: string
+          format: date
+        adopted:
+          type: boolean
+
+    PetListResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          example: success
+        payload:
+          type: array
+          items:
+            $ref: '#/components/schemas/Pet'
+
+    PetResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          example: success
+        payload:
+          $ref: '#/components/schemas/Pet'

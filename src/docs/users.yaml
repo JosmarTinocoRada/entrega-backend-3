@@ -1,0 +1,74 @@
+openapi: 3.0.0
+info:
+  title: Mi API
+  version: 1.0.0
+
+components:
+  $ref: './components.yaml'  # Ruta correcta al archivo components.yaml
+
+paths:
+  /api/users:
+    get:
+      summary: Obtener todos los usuarios
+      responses:
+        '200':
+          description: Lista de usuarios
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserResponse'  # Referencia al esquema UserResponse
+
+  /api/users/{uid}:
+    get:
+      summary: Obtener un usuario por ID
+      parameters:
+        - $ref: '#/components/parameters/UserIdParam'  # Referencia al parámetro UserIdParam
+      responses:
+        '200':
+          description: Usuario encontrado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserResponse'  # Referencia al esquema UserResponse
+    
+    put:
+      summary: Actualizar un usuario
+      parameters:
+        - $ref: '#/components/parameters/UserIdParam'  # Parámetro UID
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateUser'  # Referencia al esquema UpdateUser
+      responses:
+        '200':
+          description: Usuario actualizado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserResponse'  # Referencia al esquema UserResponse
+
+    delete:
+      summary: Eliminar un usuario
+      parameters:
+        - $ref: '#/components/parameters/UserIdParam'  # Referencia al parámetro UserIdParam
+      responses:
+        '200':
+          description: Usuario eliminado con éxito
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserResponse'  # Respuesta de éxito
+        '404':
+          description: Usuario no encontrado
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: error
+                  message:
+                    type: string
+                    example: Usuario no encontrado
