@@ -1,4 +1,4 @@
-import express from 'express';
+import express from 'express'; 
 import mongoose from 'mongoose';
 import cookieParser from 'cookie-parser';
 import usersRouter from './routes/users.router.js';
@@ -9,7 +9,8 @@ import mocksRouter from './routes/mocks.router.js';
 import swaggerJsdoc from 'swagger-jsdoc';
 import swaggerUi from 'swagger-ui-express';
 import dotenv from 'dotenv';
-import logger from './utils/logger.js'; // Importar Winston
+import logger from './utils/logger.js'; // Winston
+import { errorHandlerMiddleware } from './utils/errorHandler.js'; 
 
 dotenv.config();
 
@@ -34,13 +35,12 @@ const swaggerSpec = swaggerJsdoc(options);
 
 const swaggerDocs = (app, port) => {
   app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
-  logger.info(`📄 Swagger docs disponibles en http://localhost:${port}/api-docs`); // Log en vez de console.log
+  logger.info(`📄 Swagger docs disponibles en http://localhost:${port}/api-docs`);
 };
 
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-// Logueo conexión con Mongo (aunque aún no es async-await aquí)
 mongoose.connect(process.env.URI_MONGODB)
   .then(() => logger.info('✅ Conexión a MongoDB exitosa'))
   .catch(err => logger.error('❌ Error al conectar a MongoDB:', err));
@@ -48,15 +48,20 @@ mongoose.connect(process.env.URI_MONGODB)
 app.use(express.json());
 app.use(cookieParser());
 
+// Rutas
 app.use('/api/users', usersRouter);
 app.use('/api/pets', petsRouter);
 app.use('/api/adoptions', adoptionsRouter);
 app.use('/api/sessions', sessionsRouter);
 app.use('/api/mocks', mocksRouter);
 
+//  Swagger docs
 swaggerDocs(app, PORT);
 
-// Reemplazo console.log por logger
+//  Middleware de errores 
+app.use(errorHandlerMiddleware);
+
+// Inicio de servidor
 app.listen(PORT, () => {
   logger.info(`🚀 Servidor escuchando en puerto ${PORT}`);
 });

@@ -1,29 +1,29 @@
 import { Router } from 'express';
 import PetDTO from '../dto/Pet.dto.js';
 import { petsService } from '../services/index.js';
-import { CustomError, errorDictionary, handleError } from '../utils/errorHandler.js';
+import { CustomError, errorDictionary } from '../utils/errorHandler.js';
 import { __dirname } from '../utils/index.js';
 import uploader from '../utils/uploader.js';
-import logger from '../utils/logger.js'; 
+import logger from '../utils/logger.js';
 
 const router = Router();
 
 // Obtener todas las mascotas
-router.get('/', async (req, res) => {
+router.get('/', async (req, res, next) => {
   try {
-    logger.info('📥 GET /api/pets - obteniendo todas las mascotas');
+    logger.info(' GET /api/pets - obteniendo todas las mascotas');
     const pets = await petsService.getAll();
     res.send({ status: "success", payload: pets });
   } catch (error) {
     logger.error(' Error al obtener mascotas:', error);
-    handleError(error, res);
+    next(error);
   }
 });
 
 // Crear una nueva mascota
-router.post('/', async (req, res) => {
+router.post('/', async (req, res, next) => {
   try {
-    logger.info('📥 POST /api/pets - creando nueva mascota');
+    logger.info(' POST /api/pets - creando nueva mascota');
     const { name, specie, birthDate } = req.body;
 
     if (!name || !specie || !birthDate) {
@@ -41,15 +41,15 @@ router.post('/', async (req, res) => {
     logger.info(` Mascota creada con ID: ${result._id}`);
     res.status(201).json({ status: 'success', payload: result });
   } catch (error) {
-    logger.error('❌ Error al crear mascota:', error);
-    handleError(error, res);
+    logger.error(' Error al crear mascota:', error);
+    next(error);
   }
 });
 
 // Crear una mascota con imagen
-router.post('/withimage', uploader.single('image'), async (req, res) => {
+router.post('/withimage', uploader.single('image'), async (req, res, next) => {
   try {
-    logger.info('📥 POST /api/pets/withimage - creando mascota con imagen');
+    logger.info(' POST /api/pets/withimage - creando mascota con imagen');
     const file = req.file;
 
     if (!file) {
@@ -79,12 +79,12 @@ router.post('/withimage', uploader.single('image'), async (req, res) => {
     res.send({ status: "success", payload: result });
   } catch (error) {
     logger.error(' Error al crear mascota con imagen:', error);
-    handleError(error, res);
+    next(error);
   }
 });
 
 // Actualizar una mascota
-router.put('/:pid', async (req, res) => {
+router.put('/:pid', async (req, res, next) => {
   try {
     const petId = req.params.pid;
     logger.info(` PUT /api/pets/${petId} - actualización de mascota`);
@@ -102,12 +102,12 @@ router.put('/:pid', async (req, res) => {
     res.send({ status: "success", message: "Pet updated" });
   } catch (error) {
     logger.error(' Error al actualizar mascota:', error);
-    handleError(error, res);
+    next(error);
   }
 });
 
 // Eliminar una mascota
-router.delete('/:pid', async (req, res) => {
+router.delete('/:pid', async (req, res, next) => {
   try {
     const petId = req.params.pid;
     logger.info(` DELETE /api/pets/${petId} - intento de eliminar mascota`);
@@ -123,7 +123,7 @@ router.delete('/:pid', async (req, res) => {
     res.send({ status: "success", message: "Pet deleted" });
   } catch (error) {
     logger.error(' Error al eliminar mascota:', error);
-    handleError(error, res);
+    next(error);
   }
 });
 

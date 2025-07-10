@@ -1,41 +1,41 @@
 import { Router } from 'express';
 import MockingService from '../services/mocking.service.js';
-import { CustomError, errorDictionary, handleError } from '../utils/errorHandler.js';
-import logger from '../utils/logger.js'; //  Importar Winston
+import { CustomError, errorDictionary } from '../utils/errorHandler.js';
+import logger from '../utils/logger.js';
 
 const router = Router();
 
 // Generar mascotas mock
-router.get('/mockingpets', async (req, res) => {
+router.get('/mockingpets', async (req, res, next) => {
   try {
-    logger.info('📥 GET /api/mocks/mockingpets - generando mascotas mock');
-    const pets = MockingService.generatePets(100); // Generar 100 mascotas
+    logger.info(' GET /api/mocks/mockingpets - generando mascotas mock');
+    const pets = MockingService.generatePets(100);
     logger.info(` Generadas ${pets.length} mascotas mock`);
     res.status(200).json({ status: 'success', payload: pets });
   } catch (error) {
-    logger.error('❌ Error generando mascotas mock:', error);
-    res.status(500).json({ status: 'error', message: 'Error generating mock pets' });
+    logger.error(' Error generando mascotas mock:', error);
+    next(error);
   }
 });
 
 // Generar usuarios mock
-router.get('/mockingusers', async (req, res) => {
+router.get('/mockingusers', async (req, res, next) => {
   try {
-    logger.info('📥 GET /api/mocks/mockingusers - generando usuarios mock');
+    logger.info(' GET /api/mocks/mockingusers - generando usuarios mock');
     const users = await MockingService.generateUsers(50);
-    logger.info(` Generados ${users.length} usuarios mock`);
+    logger.info(`👤 Generados ${users.length} usuarios mock`);
     res.status(200).json({ status: 'success', payload: users });
   } catch (error) {
-    logger.error('❌ Error generando usuarios mock:', error);
-    res.status(500).json({ status: 'error', message: 'Error generating mock users' });
+    logger.error(' Error generando usuarios mock:', error);
+    next(error);
   }
 });
 
 // Insertar datos mock en base de datos
-router.post('/generateData', async (req, res) => {
+router.post('/generateData', async (req, res, next) => {
   const { users, pets } = req.body;
   try {
-    logger.info(`📥 POST /api/mocks/generateData - solicitados: ${users} usuarios y ${pets} mascotas`);
+    logger.info(` POST /api/mocks/generateData - solicitados: ${users} usuarios y ${pets} mascotas`);
 
     if (!users || !pets) {
       logger.warn(' Parámetros faltantes en /generateData');
@@ -66,7 +66,7 @@ router.post('/generateData', async (req, res) => {
     });
   } catch (error) {
     logger.error(' Error generando datos mock:', error);
-    handleError(error, res);
+    next(error);
   }
 });
 

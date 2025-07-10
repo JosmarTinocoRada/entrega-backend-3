@@ -1,5 +1,5 @@
-
 import logger from './logger.js';
+
 
 export class CustomError extends Error {
   constructor(code, message, details = null) {
@@ -8,6 +8,7 @@ export class CustomError extends Error {
     this.details = details;
   }
 }
+
 
 export const errorDictionary = {
   INCOMPLETE_VALUES: {
@@ -44,15 +45,18 @@ export const errorDictionary = {
   }
 };
 
-// para manejar y loguear errores
-export const handleError = (error, res) => {
-  logger.error(`[${error.name || 'Error'}] ${error.message}`, {
-    code: error.code || 500,
-    details: error.details || null
+// Middleware de manejo de errores
+export const errorHandlerMiddleware = (err, req, res, next) => {
+  logger.error(`[${err.name || 'Error'}] ${err.message}`, {
+    code: err.code || 500,
+    stack: err.stack,
+    details: err.details || null,
+    url: req.originalUrl,
+    method: req.method
   });
 
-  res.status(error.code || 500).send({
+  res.status(err.code || 500).json({
     status: 'error',
-    message: error.message || 'Unexpected error'
+    message: err.message || 'Unexpected error'
   });
 };

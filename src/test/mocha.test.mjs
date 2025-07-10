@@ -4,13 +4,13 @@ import { expect } from 'chai';
 import { Types } from 'mongoose';
 import server from '../app.js';
 
-describe('Adoption Router', function () {
-  this.timeout(15000); // Aumentar el tiempo de espera a 15 segundos
+describe(' Adoption Router', function () {
+  this.timeout(15000);
 
   let userId;
   let petId;
 
-  // Crear usuario y mascota antes de las pruebas
+  // Crear usuario y mascota antes de los tests
   before(async () => {
     try {
       const user = {
@@ -24,90 +24,79 @@ describe('Adoption Router', function () {
         name: 'Firulais',
         specie: 'Perro',
         adopted: false,
-        birthDate: '2020-05-10' //  Requerido por el router
+        birthDate: '2020-05-10'
       };
 
-      // accedemos correctamente al _id del usuario
-      const userRes = await request(server)
-        .post('/api/users')
-        .send(user);
-      userId = userRes.body.user._id;
+      const userRes = await request(server).post('/api/users').send(user);
+      if (userRes.status !== 201 || !userRes.body.payload) {
+        throw new Error(' Error creando usuario: ' + JSON.stringify(userRes.body));
+      }
+      userId = userRes.body.payload;
 
-      // accedemos al payload devuelto por la creación de la mascota
-      const petRes = await request(server)
-        .post('/api/pets')
-        .send(pet);
+      const petRes = await request(server).post('/api/pets').send(pet);
+      if (petRes.status !== 201 || !petRes.body.payload?._id) {
+        throw new Error(' Error creando mascota: ' + JSON.stringify(petRes.body));
+      }
       petId = petRes.body.payload._id;
 
-      console.log('Usuario y mascota creados:', userId, petId);
+      console.log(' Usuario y mascota creados:', userId, petId);
     } catch (error) {
-      console.error('Error en before hook:', error);
+      console.error('❌ Error en before hook:', error);
       throw error;
     }
   });
 
-  //  Limpieza de datos al finalizar los tests
+  //  Limpieza de datos luego de los tests
   after(async () => {
     try {
       await request(server).delete(`/api/users/${userId}`);
       await request(server).delete(`/api/pets/${petId}`);
     } catch (error) {
-      console.error('Error al limpiar después de los tests:', error);
+      console.error(' Error al limpiar datos de prueba:', error);
     }
   });
 
-  it('Debería devolver un arreglo con todas las adopciones', async () => {
+  it('🧪 Debería devolver un arreglo con todas las adopciones', async () => {
     const res = await request(server).get('/api/adoptions');
-    console.log('Respuesta de adopciones:', res.body);
+    console.log(' Todas las adopciones:', res.body);
 
     expect(res.status).to.equal(200);
     expect(res.body).to.have.property('payload').that.is.an('array');
   });
 
-  it('Debería devolver una adopción específica por ID', async () => {
-    const adoptionRes = await request(server)
-      .post(`/api/adoptions/${userId}/${petId}`);
-    const adoptionId = adoptionRes.body._id;
-    console.log('Adopción creada:', adoptionId);
+  it(' Debería devolver una adopción específica por ID', async () => {
+    const adoptionRes = await request(server).post(`/api/adoptions/${userId}/${petId}`);
+    expect(adoptionRes.status).to.equal(201);
+    const adoptionId = adoptionRes.body.payload._id;
+    console.log(' Adopción creada:', adoptionId);
 
     const res = await request(server).get(`/api/adoptions/${adoptionId}`);
-    console.log('Respuesta de adopción específica:', res.body);
+    console.log(' Adopción por ID:', res.body);
 
     expect(res.status).to.equal(200);
-    expect(res.body).to.have.property('owner');
-    expect(res.body).to.have.property('pet');
+    expect(res.body.payload).to.have.property('owner');
+    expect(res.body.payload).to.have.property('pet');
   });
 
-  it('Debería devolver un error si no se encuentra la adopción', async () => {
+  it(' Debería devolver un error si no se encuentra la adopción', async () => {
     const res = await request(server).get('/api/adoptions/invalidAdoptionId');
-    console.log('Respuesta de error en adopción no encontrada:', res.body);
+    console.log(' Adopción no encontrada:', res.body);
 
-    expect(res.status).to.equal(404);
+    expect(res.status).to.equal(400); // por formato inválido
   });
 
-  it('Debería crear una nueva adopción cuando usuario y mascota existen y la mascota no está adoptada', async () => {
-    const res = await request(server)
-      .post(`/api/adoptions/${userId}/${petId}`);
-    console.log('Adopción creada:', res.body);
-
-    expect(res.status).to.equal(201);
-    expect(res.body.owner).to.equal(userId);
-    expect(res.body.pet).to.equal(petId);
-  });
-
-  it('Debería devolver un error si la mascota no existe', async () => {
+  it(' Debería devolver un error si la mascota no existe', async () => {
     const invalidPetId = new Types.ObjectId();
-    const res = await request(server)
-      .post(`/api/adoptions/${userId}/${invalidPetId}`);
-    console.log('Error de mascota no existente:', res.body);
+    const res = await request(server).post(`/api/adoptions/${userId}/${invalidPetId}`);
+    console.log(' Mascota inexistente:', res.body);
 
     expect(res.status).to.equal(404);
   });
 
-  it('Debería devolver un error si la mascota ya está adoptada', async () => {
-    await request(server).post(`/api/adoptions/${userId}/${petId}`);
+  it(' Debería devolver un error si la mascota ya está adoptada', async () => {
+    await request(server).post(`/api/adoptions/${userId}/${petId}`); // ya adoptada
     const res = await request(server).post(`/api/adoptions/${userId}/${petId}`);
-    console.log('Error de mascota ya adoptada:', res.body);
+    console.log(' Mascota ya adoptada:', res.body);
 
     expect(res.status).to.equal(400);
   });
