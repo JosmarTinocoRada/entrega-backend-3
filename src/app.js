@@ -9,6 +9,7 @@ import mocksRouter from './routes/mocks.router.js';
 import swaggerJsdoc from 'swagger-jsdoc';
 import swaggerUi from 'swagger-ui-express';
 import dotenv from 'dotenv';
+import logger from './utils/logger.js'; // Importar Winston
 
 dotenv.config();
 
@@ -26,19 +27,23 @@ const options = {
       },
     ],
   },
-  apis: ['./src/docs/**/*.yaml'], 
+  apis: ['./src/docs/**/*.yaml'],
 };
 
 const swaggerSpec = swaggerJsdoc(options);
 
 const swaggerDocs = (app, port) => {
   app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
-  console.log(`Swagger docs available at http://localhost:${port}/api-docs`);
+  logger.info(`📄 Swagger docs disponibles en http://localhost:${port}/api-docs`); // Log en vez de console.log
 };
 
 const app = express();
 const PORT = process.env.PORT || 8080;
-const connection = mongoose.connect(process.env.URI_MONGODB);
+
+// Logueo conexión con Mongo (aunque aún no es async-await aquí)
+mongoose.connect(process.env.URI_MONGODB)
+  .then(() => logger.info('✅ Conexión a MongoDB exitosa'))
+  .catch(err => logger.error('❌ Error al conectar a MongoDB:', err));
 
 app.use(express.json());
 app.use(cookieParser());
@@ -51,6 +56,9 @@ app.use('/api/mocks', mocksRouter);
 
 swaggerDocs(app, PORT);
 
-app.listen(PORT, () => console.log(`Listening on ${PORT}`));
+// Reemplazo console.log por logger
+app.listen(PORT, () => {
+  logger.info(`🚀 Servidor escuchando en puerto ${PORT}`);
+});
 
 export default app;

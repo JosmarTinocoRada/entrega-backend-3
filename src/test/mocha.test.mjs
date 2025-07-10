@@ -4,12 +4,13 @@ import { expect } from 'chai';
 import { Types } from 'mongoose';
 import server from '../app.js';
 
-describe('Adoption Router', function() {
+describe('Adoption Router', function () {
   this.timeout(15000); // Aumentar el tiempo de espera a 15 segundos
 
   let userId;
   let petId;
 
+  // Crear usuario y mascota antes de las pruebas
   before(async () => {
     try {
       const user = {
@@ -22,23 +23,36 @@ describe('Adoption Router', function() {
       const pet = {
         name: 'Firulais',
         specie: 'Perro',
-        adopted: false
+        adopted: false,
+        birthDate: '2020-05-10' //  Requerido por el router
       };
 
+      // accedemos correctamente al _id del usuario
       const userRes = await request(server)
         .post('/api/users')
         .send(user);
-      userId = userRes.body._id;
+      userId = userRes.body.user._id;
 
+      // accedemos al payload devuelto por la creación de la mascota
       const petRes = await request(server)
         .post('/api/pets')
         .send(pet);
-      petId = petRes.body._id;
+      petId = petRes.body.payload._id;
 
       console.log('Usuario y mascota creados:', userId, petId);
     } catch (error) {
       console.error('Error en before hook:', error);
       throw error;
+    }
+  });
+
+  //  Limpieza de datos al finalizar los tests
+  after(async () => {
+    try {
+      await request(server).delete(`/api/users/${userId}`);
+      await request(server).delete(`/api/pets/${petId}`);
+    } catch (error) {
+      console.error('Error al limpiar después de los tests:', error);
     }
   });
 
