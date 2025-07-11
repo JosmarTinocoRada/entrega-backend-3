@@ -480,3 +480,1049 @@
   message: '[CastError] Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Pets"',
   timestamp: '2025-07-10T23:01:59.612Z'
 }
+{
+  message: '📄 Swagger docs disponibles en http://localhost:8000/api-docs',
+  level: 'info',
+  timestamp: '2025-07-10T23:05:06.860Z'
+}
+{
+  message: '🚀 Servidor escuchando en puerto 8000',
+  level: 'info',
+  timestamp: '2025-07-10T23:05:06.867Z'
+}
+{
+  message: '✅ Conexión a MongoDB exitosa',
+  level: 'info',
+  timestamp: '2025-07-10T23:05:07.733Z'
+}
+{
+  message: ' Usuario creado: juan1752188706872@example.com',
+  level: 'info',
+  timestamp: '2025-07-10T23:05:07.937Z'
+}
+{
+  message: ' ID inválido: undefined',
+  level: 'warn',
+  timestamp: '2025-07-10T23:05:07.948Z'
+}
+{
+  code: 400,
+  stack: 'Error: Invalid user ID\n' +
+    '    at file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/users.router.js:123:19\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
+    '    at Route.dispatch (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\route.js:119:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+    '    at param (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:365:14)\n' +
+    '    at param (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:376:14)\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:421:3)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at Function.handle (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:175:3)\n' +
+    '    at router (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at cookieParser (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\cookie-parser\\index.js:57:14)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at jsonParser (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\body-parser\\lib\\types\\json.js:113:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at expressInit (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\middleware\\init.js:40:5)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at query (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\middleware\\query.js:45:5)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at Function.handle (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:175:3)\n' +
+    '    at Function.handle (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\application.js:181:10)\n' +
+    '    at Server.app (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\express.js:39:9)\n' +
+    '    at Server.emit (node:events:518:28)\n' +
+    '    at parserOnIncoming (node:_http_server:1155:12)\n' +
+    '    at HTTPParser.parserOnHeadersComplete (node:_http_common:117:17)',
+  details: null,
+  url: '/api/users/undefined',
+  method: 'DELETE',
+  level: 'error',
+  message: '[Error] Invalid user ID',
+  timestamp: '2025-07-10T23:05:07.949Z'
+}
+{
+  message: ' DELETE /api/pets/undefined - intento de eliminar mascota',
+  level: 'info',
+  timestamp: '2025-07-10T23:05:07.955Z'
+}
+{
+  stringValue: '"undefined"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'undefined',
+  path: '_id',
+  reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+      at new ObjectId (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\bson\lib\bson.cjs:2523:23)
+      at castObjectId (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at SchemaObjectId.cast (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\schema\objectId.js:249:12)
+      at SchemaType.applySetters (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\schemaType.js:1255:12)
+      at SchemaType.castForQuery (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\schemaType.js:1673:17)
+      at cast (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\cast.js:390:32)
+      at Query.cast (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\query.js:4907:12)
+      at Query._castConditions (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\query.js:2325:10)
+      at model.Query._findOne (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\query.js:2648:8)
+      at model.Query.exec (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\query.js:4456:80)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async PetsDAO.getBy (file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/dao/Pets.dao.js:9:16)
+      at async file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/pets.router.js:115:25,
+  valueType: 'string',
+  level: 'error',
+  message: ' Error al eliminar mascota: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Pets"',
+  stack: 'CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Pets"\n' +
+    '    at SchemaObjectId.cast (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\schema\\objectId.js:251:11)\n' +
+    '    at SchemaType.applySetters (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n' +
+    '    at SchemaType.castForQuery (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n' +
+    '    at cast (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at Query.cast (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:4907:12)\n' +
+    '    at Query._castConditions (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:2325:10)\n' +
+    '    at model.Query._findOne (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:2648:8)\n' +
+    '    at model.Query.exec (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:4456:80)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async PetsDAO.getBy (file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/dao/Pets.dao.js:9:16)\n' +
+    '    at async file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/pets.router.js:115:25',
+  timestamp: '2025-07-10T23:05:07.957Z'
+}
+{
+  code: 500,
+  stack: 'CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Pets"\n' +
+    '    at SchemaObjectId.cast (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\schema\\objectId.js:251:11)\n' +
+    '    at SchemaType.applySetters (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n' +
+    '    at SchemaType.castForQuery (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n' +
+    '    at cast (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at Query.cast (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:4907:12)\n' +
+    '    at Query._castConditions (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:2325:10)\n' +
+    '    at model.Query._findOne (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:2648:8)\n' +
+    '    at model.Query.exec (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:4456:80)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async PetsDAO.getBy (file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/dao/Pets.dao.js:9:16)\n' +
+    '    at async file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/pets.router.js:115:25',
+  details: null,
+  url: '/api/pets/undefined',
+  method: 'DELETE',
+  level: 'error',
+  message: '[CastError] Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Pets"',
+  timestamp: '2025-07-10T23:05:07.958Z'
+}
+{
+  message: '📄 Swagger docs disponibles en http://localhost:8000/api-docs',
+  level: 'info',
+  timestamp: '2025-07-10T23:07:19.855Z'
+}
+{
+  message: '🚀 Servidor escuchando en puerto 8000',
+  level: 'info',
+  timestamp: '2025-07-10T23:07:19.862Z'
+}
+{
+  message: '✅ Conexión a MongoDB exitosa',
+  level: 'info',
+  timestamp: '2025-07-10T23:07:20.572Z'
+}
+{
+  message: ' Usuario creado: juan1752188839869@example.com',
+  level: 'info',
+  timestamp: '2025-07-10T23:07:20.779Z'
+}
+{
+  message: ' ID inválido: undefined',
+  level: 'warn',
+  timestamp: '2025-07-10T23:07:20.789Z'
+}
+{
+  code: 400,
+  stack: 'Error: Invalid user ID\n' +
+    '    at file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/users.router.js:123:19\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
+    '    at Route.dispatch (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\route.js:119:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+    '    at param (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:365:14)\n' +
+    '    at param (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:376:14)\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:421:3)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at Function.handle (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:175:3)\n' +
+    '    at router (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at cookieParser (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\cookie-parser\\index.js:57:14)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at jsonParser (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\body-parser\\lib\\types\\json.js:113:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at expressInit (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\middleware\\init.js:40:5)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at query (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\middleware\\query.js:45:5)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at Function.handle (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:175:3)\n' +
+    '    at Function.handle (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\application.js:181:10)\n' +
+    '    at Server.app (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\express.js:39:9)\n' +
+    '    at Server.emit (node:events:518:28)\n' +
+    '    at parserOnIncoming (node:_http_server:1155:12)\n' +
+    '    at HTTPParser.parserOnHeadersComplete (node:_http_common:117:17)',
+  details: null,
+  url: '/api/users/undefined',
+  method: 'DELETE',
+  level: 'error',
+  message: '[Error] Invalid user ID',
+  timestamp: '2025-07-10T23:07:20.790Z'
+}
+{
+  message: ' DELETE /api/pets/undefined - intento de eliminar mascota',
+  level: 'info',
+  timestamp: '2025-07-10T23:07:20.796Z'
+}
+{
+  stringValue: '"undefined"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'undefined',
+  path: '_id',
+  reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+      at new ObjectId (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\bson\lib\bson.cjs:2523:23)
+      at castObjectId (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at SchemaObjectId.cast (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\schema\objectId.js:249:12)
+      at SchemaType.applySetters (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\schemaType.js:1255:12)
+      at SchemaType.castForQuery (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\schemaType.js:1673:17)
+      at cast (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\cast.js:390:32)
+      at Query.cast (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\query.js:4907:12)
+      at Query._castConditions (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\query.js:2325:10)
+      at model.Query._findOne (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\query.js:2648:8)
+      at model.Query.exec (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\query.js:4456:80)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async PetsDAO.getBy (file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/dao/Pets.dao.js:9:16)
+      at async file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/pets.router.js:115:25,
+  valueType: 'string',
+  level: 'error',
+  message: ' Error al eliminar mascota: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Pets"',
+  stack: 'CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Pets"\n' +
+    '    at SchemaObjectId.cast (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\schema\\objectId.js:251:11)\n' +
+    '    at SchemaType.applySetters (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n' +
+    '    at SchemaType.castForQuery (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n' +
+    '    at cast (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at Query.cast (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:4907:12)\n' +
+    '    at Query._castConditions (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:2325:10)\n' +
+    '    at model.Query._findOne (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:2648:8)\n' +
+    '    at model.Query.exec (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:4456:80)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async PetsDAO.getBy (file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/dao/Pets.dao.js:9:16)\n' +
+    '    at async file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/pets.router.js:115:25',
+  timestamp: '2025-07-10T23:07:20.798Z'
+}
+{
+  code: 500,
+  stack: 'CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Pets"\n' +
+    '    at SchemaObjectId.cast (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\schema\\objectId.js:251:11)\n' +
+    '    at SchemaType.applySetters (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n' +
+    '    at SchemaType.castForQuery (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n' +
+    '    at cast (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at Query.cast (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:4907:12)\n' +
+    '    at Query._castConditions (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:2325:10)\n' +
+    '    at model.Query._findOne (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:2648:8)\n' +
+    '    at model.Query.exec (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:4456:80)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async PetsDAO.getBy (file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/dao/Pets.dao.js:9:16)\n' +
+    '    at async file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/pets.router.js:115:25',
+  details: null,
+  url: '/api/pets/undefined',
+  method: 'DELETE',
+  level: 'error',
+  message: '[CastError] Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Pets"',
+  timestamp: '2025-07-10T23:07:20.799Z'
+}
+{
+  message: '📄 Swagger docs disponibles en http://localhost:8000/api-docs',
+  level: 'info',
+  timestamp: '2025-07-10T23:08:53.289Z'
+}
+{
+  message: '🚀 Servidor escuchando en puerto 8000',
+  level: 'info',
+  timestamp: '2025-07-10T23:08:53.296Z'
+}
+{
+  message: '✅ Conexión a MongoDB exitosa',
+  level: 'info',
+  timestamp: '2025-07-10T23:08:54.051Z'
+}
+{
+  message: ' Usuario creado: juan1752188933303@example.com',
+  level: 'info',
+  timestamp: '2025-07-10T23:08:54.255Z'
+}
+{
+  message: ' POST /api/pets - creando nueva mascota',
+  level: 'info',
+  timestamp: '2025-07-10T23:08:54.265Z'
+}
+{
+  level: 'error',
+  message: ' Error al crear mascota: this.dao.save is not a function',
+  stack: 'TypeError: this.dao.save is not a function\n' +
+    '    at PetRepository.create (file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/repository/GenericRepository.js:16:25)\n' +
+    '    at file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/pets.router.js:39:38\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
+    '    at Route.dispatch (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\route.js:119:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at Function.handle (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:175:3)\n' +
+    '    at router (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at cookieParser (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\cookie-parser\\index.js:57:14)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\body-parser\\lib\\read.js:137:5\n' +
+    '    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n' +
+    '    at invokeCallback (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\raw-body\\index.js:238:16)\n' +
+    '    at done (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\raw-body\\index.js:227:7)\n' +
+    '    at IncomingMessage.onEnd (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\raw-body\\index.js:287:7)\n' +
+    '    at IncomingMessage.emit (node:events:518:28)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1698:12)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)',
+  timestamp: '2025-07-10T23:08:54.266Z'
+}
+{
+  code: 500,
+  stack: 'TypeError: this.dao.save is not a function\n' +
+    '    at PetRepository.create (file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/repository/GenericRepository.js:16:25)\n' +
+    '    at file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/pets.router.js:39:38\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
+    '    at Route.dispatch (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\route.js:119:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at Function.handle (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:175:3)\n' +
+    '    at router (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at cookieParser (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\cookie-parser\\index.js:57:14)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\body-parser\\lib\\read.js:137:5\n' +
+    '    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n' +
+    '    at invokeCallback (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\raw-body\\index.js:238:16)\n' +
+    '    at done (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\raw-body\\index.js:227:7)\n' +
+    '    at IncomingMessage.onEnd (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\raw-body\\index.js:287:7)\n' +
+    '    at IncomingMessage.emit (node:events:518:28)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1698:12)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)',
+  details: null,
+  url: '/api/pets',
+  method: 'POST',
+  level: 'error',
+  message: '[TypeError] this.dao.save is not a function',
+  timestamp: '2025-07-10T23:08:54.268Z'
+}
+{
+  message: ' Usuario eliminado: 68704806642f5a75986fd457',
+  level: 'info',
+  timestamp: '2025-07-10T23:08:54.315Z'
+}
+{
+  message: ' DELETE /api/pets/undefined - intento de eliminar mascota',
+  level: 'info',
+  timestamp: '2025-07-10T23:08:54.319Z'
+}
+{
+  stringValue: '"undefined"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'undefined',
+  path: '_id',
+  reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+      at new ObjectId (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\bson\lib\bson.cjs:2523:23)
+      at castObjectId (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at SchemaObjectId.cast (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\schema\objectId.js:249:12)
+      at SchemaType.applySetters (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\schemaType.js:1255:12)
+      at SchemaType.castForQuery (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\schemaType.js:1673:17)
+      at cast (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\cast.js:390:32)
+      at Query.cast (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\query.js:4907:12)
+      at Query._castConditions (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\query.js:2325:10)
+      at model.Query._findOne (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\query.js:2648:8)
+      at model.Query.exec (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\query.js:4456:80)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async PetsDAO.getBy (file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/dao/Pets.dao.js:9:16)
+      at async file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/pets.router.js:115:25,
+  valueType: 'string',
+  level: 'error',
+  message: ' Error al eliminar mascota: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Pets"',
+  stack: 'CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Pets"\n' +
+    '    at SchemaObjectId.cast (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\schema\\objectId.js:251:11)\n' +
+    '    at SchemaType.applySetters (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n' +
+    '    at SchemaType.castForQuery (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n' +
+    '    at cast (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at Query.cast (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:4907:12)\n' +
+    '    at Query._castConditions (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:2325:10)\n' +
+    '    at model.Query._findOne (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:2648:8)\n' +
+    '    at model.Query.exec (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:4456:80)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async PetsDAO.getBy (file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/dao/Pets.dao.js:9:16)\n' +
+    '    at async file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/pets.router.js:115:25',
+  timestamp: '2025-07-10T23:08:54.320Z'
+}
+{
+  code: 500,
+  stack: 'CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Pets"\n' +
+    '    at SchemaObjectId.cast (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\schema\\objectId.js:251:11)\n' +
+    '    at SchemaType.applySetters (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n' +
+    '    at SchemaType.castForQuery (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n' +
+    '    at cast (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at Query.cast (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:4907:12)\n' +
+    '    at Query._castConditions (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:2325:10)\n' +
+    '    at model.Query._findOne (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:2648:8)\n' +
+    '    at model.Query.exec (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:4456:80)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async PetsDAO.getBy (file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/dao/Pets.dao.js:9:16)\n' +
+    '    at async file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/pets.router.js:115:25',
+  details: null,
+  url: '/api/pets/undefined',
+  method: 'DELETE',
+  level: 'error',
+  message: '[CastError] Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Pets"',
+  timestamp: '2025-07-10T23:08:54.322Z'
+}
+{
+  message: '📄 Swagger docs disponibles en http://localhost:8000/api-docs',
+  level: 'info',
+  timestamp: '2025-07-10T23:12:11.630Z'
+}
+{
+  message: '🚀 Servidor escuchando en puerto 8000',
+  level: 'info',
+  timestamp: '2025-07-10T23:12:11.638Z'
+}
+{
+  message: '✅ Conexión a MongoDB exitosa',
+  level: 'info',
+  timestamp: '2025-07-10T23:12:12.573Z'
+}
+{
+  message: ' Usuario creado: juan1752189131643@example.com',
+  level: 'info',
+  timestamp: '2025-07-10T23:12:12.796Z'
+}
+{
+  message: ' POST /api/pets - creando nueva mascota',
+  level: 'info',
+  timestamp: '2025-07-10T23:12:12.806Z'
+}
+{
+  level: 'error',
+  message: ' Error al crear mascota: this.dao.save is not a function',
+  stack: 'TypeError: this.dao.save is not a function\n' +
+    '    at PetRepository.create (file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/repository/GenericRepository.js:16:25)\n' +
+    '    at file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/pets.router.js:39:38\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
+    '    at Route.dispatch (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\route.js:119:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at Function.handle (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:175:3)\n' +
+    '    at router (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at cookieParser (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\cookie-parser\\index.js:57:14)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\body-parser\\lib\\read.js:137:5\n' +
+    '    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n' +
+    '    at invokeCallback (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\raw-body\\index.js:238:16)\n' +
+    '    at done (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\raw-body\\index.js:227:7)\n' +
+    '    at IncomingMessage.onEnd (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\raw-body\\index.js:287:7)\n' +
+    '    at IncomingMessage.emit (node:events:518:28)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1698:12)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)',
+  timestamp: '2025-07-10T23:12:12.807Z'
+}
+{
+  code: 500,
+  stack: 'TypeError: this.dao.save is not a function\n' +
+    '    at PetRepository.create (file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/repository/GenericRepository.js:16:25)\n' +
+    '    at file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/pets.router.js:39:38\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
+    '    at Route.dispatch (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\route.js:119:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at Function.handle (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:175:3)\n' +
+    '    at router (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at cookieParser (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\cookie-parser\\index.js:57:14)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\body-parser\\lib\\read.js:137:5\n' +
+    '    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n' +
+    '    at invokeCallback (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\raw-body\\index.js:238:16)\n' +
+    '    at done (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\raw-body\\index.js:227:7)\n' +
+    '    at IncomingMessage.onEnd (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\raw-body\\index.js:287:7)\n' +
+    '    at IncomingMessage.emit (node:events:518:28)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1698:12)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)',
+  details: null,
+  url: '/api/pets',
+  method: 'POST',
+  level: 'error',
+  message: '[TypeError] this.dao.save is not a function',
+  timestamp: '2025-07-10T23:12:12.810Z'
+}
+{
+  message: ' Usuario eliminado: 687048cce9dc1a61b4f4c45f',
+  level: 'info',
+  timestamp: '2025-07-10T23:12:12.862Z'
+}
+{
+  message: ' DELETE /api/pets/undefined - intento de eliminar mascota',
+  level: 'info',
+  timestamp: '2025-07-10T23:12:12.869Z'
+}
+{
+  stringValue: '"undefined"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'undefined',
+  path: '_id',
+  reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+      at new ObjectId (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\bson\lib\bson.cjs:2523:23)
+      at castObjectId (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at SchemaObjectId.cast (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\schema\objectId.js:249:12)
+      at SchemaType.applySetters (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\schemaType.js:1255:12)
+      at SchemaType.castForQuery (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\schemaType.js:1673:17)
+      at cast (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\cast.js:390:32)
+      at Query.cast (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\query.js:4907:12)
+      at Query._castConditions (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\query.js:2325:10)
+      at model.Query._findOne (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\query.js:2648:8)
+      at model.Query.exec (C:\Users\josma\OneDrive\Documentos\CoderHouse\entrega-backend3-main\node_modules\mongoose\lib\query.js:4456:80)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async PetsDAO.getBy (file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/dao/Pets.dao.js:9:16)
+      at async file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/pets.router.js:115:25,
+  valueType: 'string',
+  level: 'error',
+  message: ' Error al eliminar mascota: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Pets"',
+  stack: 'CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Pets"\n' +
+    '    at SchemaObjectId.cast (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\schema\\objectId.js:251:11)\n' +
+    '    at SchemaType.applySetters (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n' +
+    '    at SchemaType.castForQuery (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n' +
+    '    at cast (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at Query.cast (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:4907:12)\n' +
+    '    at Query._castConditions (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:2325:10)\n' +
+    '    at model.Query._findOne (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:2648:8)\n' +
+    '    at model.Query.exec (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:4456:80)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async PetsDAO.getBy (file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/dao/Pets.dao.js:9:16)\n' +
+    '    at async file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/pets.router.js:115:25',
+  timestamp: '2025-07-10T23:12:12.870Z'
+}
+{
+  code: 500,
+  stack: 'CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Pets"\n' +
+    '    at SchemaObjectId.cast (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\schema\\objectId.js:251:11)\n' +
+    '    at SchemaType.applySetters (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n' +
+    '    at SchemaType.castForQuery (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n' +
+    '    at cast (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at Query.cast (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:4907:12)\n' +
+    '    at Query._castConditions (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:2325:10)\n' +
+    '    at model.Query._findOne (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:2648:8)\n' +
+    '    at model.Query.exec (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\mongoose\\lib\\query.js:4456:80)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async PetsDAO.getBy (file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/dao/Pets.dao.js:9:16)\n' +
+    '    at async file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/pets.router.js:115:25',
+  details: null,
+  url: '/api/pets/undefined',
+  method: 'DELETE',
+  level: 'error',
+  message: '[CastError] Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Pets"',
+  timestamp: '2025-07-10T23:12:12.872Z'
+}
+{
+  message: '📄 Swagger docs disponibles en http://localhost:8000/api-docs',
+  level: 'info',
+  timestamp: '2025-07-10T23:14:00.620Z'
+}
+{
+  message: '🚀 Servidor escuchando en puerto 8000',
+  level: 'info',
+  timestamp: '2025-07-10T23:14:00.628Z'
+}
+{
+  message: '✅ Conexión a MongoDB exitosa',
+  level: 'info',
+  timestamp: '2025-07-10T23:14:01.648Z'
+}
+{
+  message: ' Usuario creado: juan1752189240634@example.com',
+  level: 'info',
+  timestamp: '2025-07-10T23:14:01.856Z'
+}
+{
+  message: ' POST /api/pets - creando nueva mascota',
+  level: 'info',
+  timestamp: '2025-07-10T23:14:01.865Z'
+}
+{
+  message: ' Mascota creada con ID: 687049393a2bea6499635e04',
+  level: 'info',
+  timestamp: '2025-07-10T23:14:01.907Z'
+}
+{
+  message: ' GET /api/adoptions - obteniendo todas las adopciones',
+  level: 'info',
+  timestamp: '2025-07-10T23:14:01.912Z'
+}
+{
+  message: ' POST /api/adoptions/687049393a2bea6499635e02/687049393a2bea6499635e04 - creando adopción',
+  level: 'info',
+  timestamp: '2025-07-10T23:14:01.954Z'
+}
+{
+  level: 'error',
+  message: ' Error al crear adopción: mongoose is not defined',
+  stack: 'ReferenceError: mongoose is not defined\n' +
+    '    at AdoptionRepository.createAdoption (file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/repository/AdoptionRepository.js:10:9)\n' +
+    '    at file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/adoption.router.js:74:45\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  timestamp: '2025-07-10T23:14:02.025Z'
+}
+{
+  code: 500,
+  stack: 'ReferenceError: mongoose is not defined\n' +
+    '    at AdoptionRepository.createAdoption (file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/repository/AdoptionRepository.js:10:9)\n' +
+    '    at file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/adoption.router.js:74:45\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  details: null,
+  url: '/api/adoptions/687049393a2bea6499635e02/687049393a2bea6499635e04',
+  method: 'POST',
+  level: 'error',
+  message: '[ReferenceError] mongoose is not defined',
+  timestamp: '2025-07-10T23:14:02.027Z'
+}
+{
+  message: ' GET /api/adoptions/invalidAdoptionId - buscando adopción por ID',
+  level: 'info',
+  timestamp: '2025-07-10T23:14:02.033Z'
+}
+{
+  message: ' Formato de ID de adopción inválido',
+  level: 'warn',
+  timestamp: '2025-07-10T23:14:02.033Z'
+}
+{
+  code: 400,
+  stack: 'Error: Invalid adoption ID format\n' +
+    '    at file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/adoption.router.js:29:19\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
+    '    at Route.dispatch (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\route.js:119:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+    '    at param (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:365:14)\n' +
+    '    at param (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:376:14)\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:421:3)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at Function.handle (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:175:3)\n' +
+    '    at router (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at cookieParser (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\cookie-parser\\index.js:57:14)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at jsonParser (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\body-parser\\lib\\types\\json.js:113:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at expressInit (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\middleware\\init.js:40:5)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at query (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\middleware\\query.js:45:5)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at Function.handle (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:175:3)\n' +
+    '    at Function.handle (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\application.js:181:10)\n' +
+    '    at Server.app (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\express.js:39:9)\n' +
+    '    at Server.emit (node:events:518:28)\n' +
+    '    at parserOnIncoming (node:_http_server:1155:12)\n' +
+    '    at HTTPParser.parserOnHeadersComplete (node:_http_common:117:17)',
+  details: null,
+  url: '/api/adoptions/invalidAdoptionId',
+  method: 'GET',
+  level: 'error',
+  message: '[Error] Invalid adoption ID format',
+  timestamp: '2025-07-10T23:14:02.034Z'
+}
+{
+  message: ' POST /api/adoptions/687049393a2bea6499635e02/6870493a3a2bea6499635e0a - creando adopción',
+  level: 'info',
+  timestamp: '2025-07-10T23:14:02.040Z'
+}
+{
+  message: ' Mascota no encontrada: 6870493a3a2bea6499635e0a',
+  level: 'warn',
+  timestamp: '2025-07-10T23:14:02.110Z'
+}
+{
+  code: 404,
+  stack: 'Error: Pet not found\n' +
+    '    at file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/adoption.router.js:66:19\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  details: null,
+  url: '/api/adoptions/687049393a2bea6499635e02/6870493a3a2bea6499635e0a',
+  method: 'POST',
+  level: 'error',
+  message: '[Error] Pet not found',
+  timestamp: '2025-07-10T23:14:02.110Z'
+}
+{
+  message: ' POST /api/adoptions/687049393a2bea6499635e02/687049393a2bea6499635e04 - creando adopción',
+  level: 'info',
+  timestamp: '2025-07-10T23:14:02.114Z'
+}
+{
+  level: 'error',
+  message: ' Error al crear adopción: mongoose is not defined',
+  stack: 'ReferenceError: mongoose is not defined\n' +
+    '    at AdoptionRepository.createAdoption (file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/repository/AdoptionRepository.js:10:9)\n' +
+    '    at file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/adoption.router.js:74:45\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  timestamp: '2025-07-10T23:14:02.185Z'
+}
+{
+  code: 500,
+  stack: 'ReferenceError: mongoose is not defined\n' +
+    '    at AdoptionRepository.createAdoption (file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/repository/AdoptionRepository.js:10:9)\n' +
+    '    at file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/adoption.router.js:74:45\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  details: null,
+  url: '/api/adoptions/687049393a2bea6499635e02/687049393a2bea6499635e04',
+  method: 'POST',
+  level: 'error',
+  message: '[ReferenceError] mongoose is not defined',
+  timestamp: '2025-07-10T23:14:02.185Z'
+}
+{
+  message: ' POST /api/adoptions/687049393a2bea6499635e02/687049393a2bea6499635e04 - creando adopción',
+  level: 'info',
+  timestamp: '2025-07-10T23:14:02.189Z'
+}
+{
+  level: 'error',
+  message: ' Error al crear adopción: mongoose is not defined',
+  stack: 'ReferenceError: mongoose is not defined\n' +
+    '    at AdoptionRepository.createAdoption (file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/repository/AdoptionRepository.js:10:9)\n' +
+    '    at file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/adoption.router.js:74:45\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  timestamp: '2025-07-10T23:14:02.259Z'
+}
+{
+  code: 500,
+  stack: 'ReferenceError: mongoose is not defined\n' +
+    '    at AdoptionRepository.createAdoption (file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/repository/AdoptionRepository.js:10:9)\n' +
+    '    at file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/adoption.router.js:74:45\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  details: null,
+  url: '/api/adoptions/687049393a2bea6499635e02/687049393a2bea6499635e04',
+  method: 'POST',
+  level: 'error',
+  message: '[ReferenceError] mongoose is not defined',
+  timestamp: '2025-07-10T23:14:02.259Z'
+}
+{
+  message: ' Usuario eliminado: 687049393a2bea6499635e02',
+  level: 'info',
+  timestamp: '2025-07-10T23:14:02.304Z'
+}
+{
+  message: ' DELETE /api/pets/687049393a2bea6499635e04 - intento de eliminar mascota',
+  level: 'info',
+  timestamp: '2025-07-10T23:14:02.308Z'
+}
+{
+  message: ' Mascota eliminada: 687049393a2bea6499635e04',
+  level: 'info',
+  timestamp: '2025-07-10T23:14:02.380Z'
+}
+{
+  message: '📄 Swagger docs disponibles en http://localhost:8000/api-docs',
+  level: 'info',
+  timestamp: '2025-07-10T23:15:33.198Z'
+}
+{
+  message: '🚀 Servidor escuchando en puerto 8000',
+  level: 'info',
+  timestamp: '2025-07-10T23:15:33.206Z'
+}
+{
+  message: '✅ Conexión a MongoDB exitosa',
+  level: 'info',
+  timestamp: '2025-07-10T23:15:33.857Z'
+}
+{
+  message: ' Usuario creado: juan1752189333213@example.com',
+  level: 'info',
+  timestamp: '2025-07-10T23:15:34.063Z'
+}
+{
+  message: ' POST /api/pets - creando nueva mascota',
+  level: 'info',
+  timestamp: '2025-07-10T23:15:34.071Z'
+}
+{
+  message: ' Mascota creada con ID: 6870499607cbd5e67928879a',
+  level: 'info',
+  timestamp: '2025-07-10T23:15:34.112Z'
+}
+{
+  message: ' GET /api/adoptions - obteniendo todas las adopciones',
+  level: 'info',
+  timestamp: '2025-07-10T23:15:34.116Z'
+}
+{
+  message: ' POST /api/adoptions/6870499507cbd5e679288798/6870499607cbd5e67928879a - creando adopción',
+  level: 'info',
+  timestamp: '2025-07-10T23:15:34.167Z'
+}
+{
+  message: ' Adopción creada: Usuario 6870499507cbd5e679288798 adoptó mascota 6870499607cbd5e67928879a',
+  level: 'info',
+  timestamp: '2025-07-10T23:15:34.359Z'
+}
+{
+  message: ' GET /api/adoptions/6870499607cbd5e6792887a0 - buscando adopción por ID',
+  level: 'info',
+  timestamp: '2025-07-10T23:15:34.363Z'
+}
+{
+  message: ' GET /api/adoptions/invalidAdoptionId - buscando adopción por ID',
+  level: 'info',
+  timestamp: '2025-07-10T23:15:34.404Z'
+}
+{
+  message: ' Formato de ID de adopción inválido',
+  level: 'warn',
+  timestamp: '2025-07-10T23:15:34.404Z'
+}
+{
+  code: 400,
+  stack: 'Error: Invalid adoption ID format\n' +
+    '    at file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/adoption.router.js:29:19\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
+    '    at Route.dispatch (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\route.js:119:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+    '    at param (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:365:14)\n' +
+    '    at param (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:376:14)\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:421:3)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at Function.handle (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:175:3)\n' +
+    '    at router (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at cookieParser (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\cookie-parser\\index.js:57:14)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at jsonParser (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\body-parser\\lib\\types\\json.js:113:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at expressInit (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\middleware\\init.js:40:5)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at query (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\middleware\\query.js:45:5)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:328:13)\n' +
+    '    at C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:286:9\n' +
+    '    at Function.process_params (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at Function.handle (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\router\\index.js:175:3)\n' +
+    '    at Function.handle (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\application.js:181:10)\n' +
+    '    at Server.app (C:\\Users\\josma\\OneDrive\\Documentos\\CoderHouse\\entrega-backend3-main\\node_modules\\express\\lib\\express.js:39:9)\n' +
+    '    at Server.emit (node:events:518:28)\n' +
+    '    at parserOnIncoming (node:_http_server:1155:12)\n' +
+    '    at HTTPParser.parserOnHeadersComplete (node:_http_common:117:17)',
+  details: null,
+  url: '/api/adoptions/invalidAdoptionId',
+  method: 'GET',
+  level: 'error',
+  message: '[Error] Invalid adoption ID format',
+  timestamp: '2025-07-10T23:15:34.405Z'
+}
+{
+  message: ' POST /api/adoptions/6870499507cbd5e679288798/6870499607cbd5e6792887a5 - creando adopción',
+  level: 'info',
+  timestamp: '2025-07-10T23:15:34.411Z'
+}
+{
+  message: ' Mascota no encontrada: 6870499607cbd5e6792887a5',
+  level: 'warn',
+  timestamp: '2025-07-10T23:15:34.482Z'
+}
+{
+  code: 404,
+  stack: 'Error: Pet not found\n' +
+    '    at file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/adoption.router.js:66:19\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  details: null,
+  url: '/api/adoptions/6870499507cbd5e679288798/6870499607cbd5e6792887a5',
+  method: 'POST',
+  level: 'error',
+  message: '[Error] Pet not found',
+  timestamp: '2025-07-10T23:15:34.482Z'
+}
+{
+  message: ' POST /api/adoptions/6870499507cbd5e679288798/6870499607cbd5e67928879a - creando adopción',
+  level: 'info',
+  timestamp: '2025-07-10T23:15:34.487Z'
+}
+{
+  message: ' Mascota ya adoptada: 6870499607cbd5e67928879a',
+  level: 'warn',
+  timestamp: '2025-07-10T23:15:34.556Z'
+}
+{
+  code: 400,
+  stack: 'Error: Pet is already adopted\n' +
+    '    at file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/adoption.router.js:71:19\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  details: null,
+  url: '/api/adoptions/6870499507cbd5e679288798/6870499607cbd5e67928879a',
+  method: 'POST',
+  level: 'error',
+  message: '[Error] Pet is already adopted',
+  timestamp: '2025-07-10T23:15:34.557Z'
+}
+{
+  message: ' POST /api/adoptions/6870499507cbd5e679288798/6870499607cbd5e67928879a - creando adopción',
+  level: 'info',
+  timestamp: '2025-07-10T23:15:34.561Z'
+}
+{
+  message: ' Mascota ya adoptada: 6870499607cbd5e67928879a',
+  level: 'warn',
+  timestamp: '2025-07-10T23:15:34.631Z'
+}
+{
+  code: 400,
+  stack: 'Error: Pet is already adopted\n' +
+    '    at file:///C:/Users/josma/OneDrive/Documentos/CoderHouse/entrega-backend3-main/src/routes/adoption.router.js:71:19\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  details: null,
+  url: '/api/adoptions/6870499507cbd5e679288798/6870499607cbd5e67928879a',
+  method: 'POST',
+  level: 'error',
+  message: '[Error] Pet is already adopted',
+  timestamp: '2025-07-10T23:15:34.632Z'
+}
+{
+  message: ' Usuario eliminado: 6870499507cbd5e679288798',
+  level: 'info',
+  timestamp: '2025-07-10T23:15:34.677Z'
+}
+{
+  message: ' DELETE /api/pets/6870499607cbd5e67928879a - intento de eliminar mascota',
+  level: 'info',
+  timestamp: '2025-07-10T23:15:34.680Z'
+}
+{
+  message: ' Mascota eliminada: 6870499607cbd5e67928879a',
+  level: 'info',
+  timestamp: '2025-07-10T23:15:34.753Z'
+}
