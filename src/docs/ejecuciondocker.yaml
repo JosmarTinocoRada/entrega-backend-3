@@ -1,0 +1,22 @@
+
+---
+
+## 🐳 Imagen Docker
+
+La imagen de este proyecto está disponible públicamente en DockerHub:
+
+🔗 **[https://hub.docker.com/r/josmartr/backend3-coderhouse](https://hub.docker.com/r/josmartr/backend3-coderhouse)**
+
+---
+
+##  Cómo ejecutar el proyecto con Docker
+
+### 1. Asegurate de tener Docker instalado
+
+> En Windows podés usar Docker Desktop.
+
+### 2. Cloná este repositorio
+
+```bash
+git clone https://github.com/tu-usuario/entrega-backend3-main.git
+cd entrega-backend3-main
